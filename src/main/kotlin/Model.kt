@@ -4,21 +4,21 @@ data class Cuenta(val nombreCuenta: String, val fotoCuenta: String)
 
 
 val cuentaSugerida = listOf<Cuenta>(
-    Cuenta("Alejandro", "fotoFuego"),
-    Cuenta("Maria", "fotoFuego"),
-    Cuenta("Yoel", "fotoFuego"),
-    Cuenta("Samuel", "fotoFuego"),
+    Cuenta("Xin Xa", "foto1.jpeg"),
+    Cuenta("Sofía", "foto1.jpeg"),
+    Cuenta("Yoel", "foto1.jpeg"),
+    Cuenta("Samuel", "foto1.jpeg"),
 )
 val historias = listOf<Cuenta>(
-    Cuenta("Lucas", "fotoFuego"),
-    Cuenta("Andrei", "fotoFuego"),
-    Cuenta("David", "fotoFuego"),
-    Cuenta("Aday", "fotoFuego"),
+    Cuenta("Xin Xa", "Imagenes/foto1.jpeg"),
+    Cuenta("Sofía", "Imagenes/foto3.jpeg"),
+    Cuenta("Carmen Rosa", "Imagenes/foto4.jpeg"),
+    Cuenta("Akira Junior", "Imagenes/foto6.jpeg"),
 )
 
 val publicaciones = listOf<Publicacion>(
-    Publicacion("fotoAutor", "Alvaro", "foto", "Una mañana en la playa"),
-    Publicacion("fotoAutor", "Zsofia", "foto", "Always with you"),
-    Publicacion("fotoAutor", "Javier", "foto", "Iron Man"),
+    Publicacion("foto1.jpeg", "Alvaro", "foto", "Una mañana en la playa"),
+    Publicacion("foto1.jpeg", "Zsofia", "foto", "Always with you"),
+    Publicacion("foto1.jpeg", "Javier", "foto", "Iron Man"),
 )
 
