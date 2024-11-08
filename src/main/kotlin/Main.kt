@@ -5,6 +5,7 @@ import androidx.compose.foundation.border
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.Button
+import androidx.compose.material.Divider
 import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
@@ -78,6 +79,8 @@ fun App() {
                 )
             }
         }
+        Divider(modifier = Modifier.padding(top=10.dp))
+
         Row(modifier = Modifier.fillMaxSize().background(Color.Yellow).padding(20.dp)) {
             Column(modifier = Modifier.background(Color.Red).fillMaxHeight().weight(1F)) {
                 Text(text = "Publicaciones")
