@@ -89,6 +89,36 @@ fun App() {
         Row(modifier = Modifier.fillMaxSize().background(Color.White).padding(20.dp)) {
             Column(modifier = Modifier.background(Color.Red).fillMaxHeight().weight(0.6f)) {
                 Text(text = "Publicaciones")
+                publicaciones.forEach { publicacion ->
+                    Image(
+                        painter = painterResource(resourcePath = publicacion.foto),
+                        contentDescription = "Publicacion",
+                        modifier = Modifier
+                            .padding(20.dp)
+                            .width(300.dp)
+                    )
+                    Row {
+                        Image(
+                            painter = painterResource(resourcePath = publicacion.fotoAutor),
+                            contentDescription = "Foto del autor",
+                            modifier = Modifier
+                                .padding(20.dp)
+                                .clip(CircleShape)
+                                .border(
+                                    width = 3.dp,
+                                    shape = CircleShape,
+                                    brush = Brush.linearGradient(
+                                        colors = listOf(Color.Black, Color.Black)
+                                    )
+                                )
+                                .width(100.dp)
+
+                        )
+                        Text(
+                            text = publicacion.autor
+                        )
+                    }
+                }
             }
             Divider(
                 color = Color.Red,
@@ -99,12 +129,12 @@ fun App() {
             )
             Column (modifier = Modifier.background(Color.Blue).weight(0.4f)){
                 Text(text = "Sugerencias")
-                cuentaSugerida.forEach{ cuentaSugerida ->
-                    Row {
-                        Text(text = cuentaSugerida.fotoCuenta)
-                        Text(text = cuentaSugerida.nombreCuenta)
-                    }
-                }
+//                cuentaSugerida.forEach{ cuentaSugerida ->
+//                    Row {
+//                        Text(text = cuentaSugerida.fotoCuenta)
+//                        Text(text = cuentaSugerida.nombreCuenta)
+//                    }
+//                }
             }
         }
     }
