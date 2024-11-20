@@ -17,8 +17,8 @@ val historias = listOf<Cuenta>(
 )
 
 val publicaciones = listOf<Publicacion>(
-    Publicacion("foto1.jpeg", "Alvaro", "foto", "Una mañana en la playa"),
-    Publicacion("foto1.jpeg", "Zsofia", "foto", "Always with you"),
-    Publicacion("foto1.jpeg", "Javier", "foto", "Iron Man"),
+    Publicacion("Imagenes/foto1.jpeg", "Alvaro", "Imagenes/amanecer.jpg", "Una mañana en la playa"),
+//    Publicacion("foto1.jpeg", "Zsofia", "foto", "Always with you"),
+//    Publicacion("foto1.jpeg", "Javier", "foto", "Iron Man"),
 )
 
